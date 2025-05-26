@@ -1,0 +1,68 @@
+{
+	"pack_format": 1,
+	
+	"metadata": {
+		"id": "geometry_dash",
+		"name": "Geometry Dash",
+		"description": "Geometry Dash's built-in icons",
+		"version": "0.0.1",
+		"icon": "icon.png",
+		
+		"license": "MIT",
+		
+		"links": {
+			"home_page": "https://www.trigam.dev/CoolIcons",
+			"source": "https://www.github.com/TrigamDev/CoolIcons"
+		},
+		
+		"authors": [
+			{
+				"name": "Trigam",
+				"contacts": {
+					"bluesky": "https://bsky.app/profile/trigam.dev",
+					"website": "https://www.trigam.dev"
+				}
+			},
+			{
+				"name": "RobTop",
+				"contacts": {
+					"twitter": "https://twitter.com/RobTopGames",
+					"youtube": "https://www.youtube.com/@RobTopGames"
+				}
+			}
+		]
+	},
+	
+	"icons": [
+		{
+			"id": "cube_001",
+			"game_mode": "cube",
+			
+			"authors": [
+				"RobTop"
+			],
+			
+			"layers": {
+				"primary": "cube/cube_001_primary.png",
+				"secondary": "cube/cube_001_secondary.png",
+				"glow": "cube/cube_001_glow.png",
+				"outline": "cube/cube_001_outline.png"
+			}
+		},
+		{
+			"id": "cube_004",
+			"game_mode": "cube",
+			
+			"authors": [
+				"RobTop"
+			],
+			
+			"layers": {
+				"primary": "cube/cube_004_primary.png",
+				"secondary": "cube/cube_004_secondary.png",
+				"glow": "cube/cube_004_glow.png",
+				"outline": "cube/cube_004_outline.png"
+			}
+		}
+	]
+}

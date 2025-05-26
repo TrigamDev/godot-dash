@@ -12,12 +12,14 @@ config_version=5
 
 config/name="Godot Dash"
 config/tags=PackedStringArray("2d", "platformer", "recreation", "rhythm")
+run/main_scene="uid://c2tewrrvu2f76"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameMode="*res://consts/game_mode.gd"
+GameLoadManager="*res://modules/load/load_manager.gd"
 
 [editor]
 

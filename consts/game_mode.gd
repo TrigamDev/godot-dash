@@ -1,3 +1,5 @@
+extends Node
+
 const GameMode: Dictionary = {
 	Cube = "cube",
 	Ship = "ship",

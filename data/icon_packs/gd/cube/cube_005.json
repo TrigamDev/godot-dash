@@ -1,0 +1,15 @@
+{
+	"id": "cube_005",
+	"game_mode": "cube",
+	
+	"authors": [
+		"RobTop"
+	],
+	
+	"layers": {
+		"primary": "cube/cube_005_primary.png",
+		"secondary": "cube/cube_005_secondary.png",
+		"glow": "cube/cube_005_glow.png",
+		"outline": "cube/cube_005_outline.png"
+	}
+}

@@ -9,8 +9,8 @@ var icons: Array[Icon]
 func _init():
 	self.metadata = PackMetadata.new()
 
-func load_from_path( pack_dir: String ) -> int:
-	var manifest_path = pack_dir.path_join( IconPackLoader.MANIFEST_FILE )
+func load_from_path( pack_dir: String, manifest_file: String ) -> int:
+	var manifest_path = pack_dir.path_join( manifest_file )
 	var manifest = FileAccess.open( manifest_path, FileAccess.READ )
 	
 	#var assumed_id = pack_dir

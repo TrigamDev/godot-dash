@@ -1,8 +1,8 @@
 class_name IconPackLoader extends Resource
 
-const BUILT_IN_PACKS := "res://data/icon_packs/"
-const CUSTOM_PACKS := "user://data/icon_packs/"
-const MANIFEST_FILE := "pack.json"
+@export var built_in_pack_directory := "res://data/icon_packs/"
+@export var custom_pack_directory := "user://data/icon_packs/"
+@export var manifest_file := "pack.json"
 
 var loaded_packs := {}
 
@@ -12,11 +12,11 @@ func load_packs() -> Dictionary:
 	print( "Loading icon packs..." )
 	
 	# Load built-in icon packs
-	var built_in_packs = scan_directory( BUILT_IN_PACKS )
+	var built_in_packs = scan_directory( built_in_pack_directory )
 	loaded_packs.merge( built_in_packs )
 	
 	# Load custom icon packs
-	var custom_packs = scan_directory( CUSTOM_PACKS )
+	var custom_packs = scan_directory( custom_pack_directory )
 	loaded_packs.merge( custom_packs )
 	
 	return loaded_packs
@@ -48,7 +48,7 @@ func scan_directory( icon_pack_dir: String ) -> Dictionary:
 
 func load_pack ( pack_dir: String ) -> IconPack:
 	var icon_pack = IconPack.new()
-	var load_result = icon_pack.load_from_path( pack_dir )
+	var load_result = icon_pack.load_from_path( pack_dir, manifest_file )
 	
 	if load_result != OK:
 		push_error( "Failed to load icon pack at " + pack_dir )

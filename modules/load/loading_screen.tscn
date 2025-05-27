@@ -1,3 +1,35 @@
-[gd_scene format=3 uid="uid://cufe7onds4y72"]
+[gd_scene load_steps=4 format=3 uid="uid://cufe7onds4y72"]
 
-[node name="loading_screen" type="Node2D"]
+[ext_resource type="Script" uid="uid://bk6ocydd80c4k" path="res://modules/load/load_manager.gd" id="1_m8a4k"]
+[ext_resource type="Script" uid="uid://do04vb8kpegr8" path="res://modules/packs/icon_pack/icon_pack_loader.gd" id="2_ule5k"]
+
+[sub_resource type="Resource" id="Resource_ule5k"]
+script = ExtResource("2_ule5k")
+built_in_pack_directory = "res://data/icon_packs/"
+custom_pack_directory = "user://data/icon_packs/"
+manifest_file = "pack.json"
+metadata/_custom_type_script = "uid://do04vb8kpegr8"
+
+[node name="loading_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background_color" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.286275, 0.721569, 1)
+
+[node name="loading" type="Node" parent="."]
+
+[node name="load_manager" type="Node" parent="loading"]
+script = ExtResource("1_m8a4k")
+icon_pack_loader = SubResource("Resource_ule5k")
+metadata/_custom_type_script = "uid://bk6ocydd80c4k"

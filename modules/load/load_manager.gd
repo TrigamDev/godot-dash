@@ -1,8 +1,8 @@
 class_name LoadManager extends Node
 
-signal loading_started()
-signal loading_progressed()
-signal loading_completed()
+#signal loading_started()
+#signal loading_progressed()
+#signal loading_completed()
 
 func _ready():
 	start_loading()

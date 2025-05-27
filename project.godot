@@ -13,6 +13,8 @@ config_version=5
 config/name="Godot Dash"
 config/tags=PackedStringArray("2d", "platformer", "recreation", "rhythm")
 run/main_scene="uid://c2tewrrvu2f76"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Trigam/Geometry Dash"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

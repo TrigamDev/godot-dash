@@ -5,8 +5,8 @@
 
 [sub_resource type="Resource" id="Resource_ule5k"]
 script = ExtResource("2_ule5k")
-built_in_pack_directory = "res://data/icon_packs/"
-custom_pack_directory = "user://data/icon_packs/"
+built_in_pack_directory = "data/icon_packs"
+custom_pack_directory = "data/icon_packs"
 manifest_file = "pack.json"
 metadata/_custom_type_script = "uid://do04vb8kpegr8"
 
